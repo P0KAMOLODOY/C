@@ -1,1 +1,14 @@
+#include <stdio.h>
 
+int isPowerOfTwo(int n) {
+    return (n > 0) && !(n & (n - 1));
+}
+
+int main() {
+    int n;
+    printf("Введите число: ");
+    scanf("%d", &n);
+
+    printf("%d\n", isPowerOfTwo(n));
+    return 0;
+}
